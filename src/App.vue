@@ -1,26 +1,18 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png" style="width:100px;">
-  <Json />
-  <Markdown />
-  <Table />
-</template>
-
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-
-import Json from "./components/Json.vue";
-import Markdown from "./components/Markdown.vue";
-import Table from "./components/Table.vue";
+import Convertor from "@/components/Convertor.vue";
 
 export default {
-  name: 'App',
-  components: {
-    Json,
-    Markdown,
-    Table
-  }
+    name: 'App',
+    components: {
+        Convertor,
+    }
 }
 </script>
+
+<template>
+    <img alt="Vue logo" src="./assets/logo.png" style="width:100px;">
+    <convertor/>
+</template>
 
 <style lang="scss">
 #app {
@@ -29,6 +21,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 </style>
